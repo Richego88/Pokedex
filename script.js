@@ -33,6 +33,7 @@ function fetchPokemons() {
 }
 
 document.querySelector("#next").addEventListener("click", function () {
+  audio.play();
   startIndex += pokemonsNumber;
   pokemonsNumber += pokemonsNumber;
   fetchPokemons();
